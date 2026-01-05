@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% load static %} {% block content %}
+<div class="text-center mb-5">
+    <h2 class="fw-bold"><i class="fas fa-camera-retro text-primary"></i> Gallery Kegiatan</h2>
+    <p class="text-muted">Dokumentasi kegiatan sehari-hari saya</p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card h-100 shadow border-0">
+            <img src="{% static 'images/foto1.jpeg' %}" class="card-img-top" alt="Kampus">
+            <div class="card-body">
+                <h5 class="card-title">Belajar di Kampus</h5>
+                <p class="card-text text-muted">Suasana belajar coding bersama teman-teman di dalam kampus.</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+                <small class="text-muted"><i class="far fa-calendar-alt"></i> 2025</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 shadow border-0">
+            <img src="{% static 'images/seminar.jpeg' %}" class="card-img-top" alt="Seminar">
+            <div class="card-body">
+                <h5 class="card-title">Seminar Teknologi</h5>
+                <p class="card-text text-muted">Menghadiri seminar tentang perkembangan AI.</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+                <small class="text-muted"><i class="far fa-calendar-alt"></i> 2025</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 shadow border-0">
+            <img src="{% static 'images/foto2.jpeg' %}" class="card-img-top" alt="Liburan">
+            <div class="card-body">
+                <h5 class="card-title">Liburan Semester</h5>
+                <p class="card-text text-muted">Healing sejenak ke kampus UI setelah UTS selesai.</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+                <small class="text-muted"><i class="far fa-calendar-alt"></i> 2025</small>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

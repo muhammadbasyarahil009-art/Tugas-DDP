@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %} {% block content %}
+<div class="row justify-content-center align-items-center" style="min-height: 60vh;">
+    <div class="col-md-8 text-center">
+        <div class="card shadow-lg border-0 rounded-3">
+            <div class="card-body p-5">
+                
+                <img src="{% static 'images/fotoprofile.jpg' %}" 
+                     class="rounded-circle mb-4 shadow" 
+                     alt="Foto Profil Saya" 
+                     width="150" 
+                     height="150"
+                     style="object-fit: cover;"> 
+                     <h1 class="display-4 fw-bold text-primary">Halo, Saya Muhammad Basyarahil</h1>
+                <p class="lead text-secondary mb-4">Mahasiswa Teknik Informatika | Web Developer Enthusiast</p>
+                
+                <hr class="w-50 mx-auto mb-4">
+                
+                <p>Selamat datang di personal website saya. Ini adalah proyek pertama saya menggunakan Django Framework.</p>
+                
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
+                    <a href="{% url 'about' %}" class="btn btn-primary btn-lg px-4 gap-3"><i class="fas fa-user me-2"></i>Kenal Lebih Dekat</a>
+                    <a href="{% url 'gallery' %}" class="btn btn-outline-secondary btn-lg px-4"><i class="fas fa-camera me-2"></i>Lihat Galeri</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
